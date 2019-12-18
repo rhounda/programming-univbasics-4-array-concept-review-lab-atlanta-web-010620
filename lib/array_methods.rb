@@ -3,7 +3,13 @@ array.find_index(value_to_find)
   
 
 def find_max_value(array)
- puts array.max
+x = 0
+array.lenght.times do |index| 
+  if array[index] > x
+x = array[index]
+end 
+end
+x
 end
 
 def find_min_value(array)
